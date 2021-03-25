@@ -4,10 +4,10 @@ import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 const myelement = (
-  <div>
+  <React.Fragment>
     <h1>I am a Header.</h1>
     <h1>I am a Header too.</h1>
-  </div>
+  </React.Fragment>
 );
 ReactDOM.render(myelement, document.getElementById('root'));
 
