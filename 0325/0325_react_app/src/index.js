@@ -3,8 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-const myelement = (<p>hello</p>);
+const myelement = (
+  <div>
+    <h1>I am a Header.</h1>
+    <h1>I am a Header too.</h1>
+  </div>
+);
 ReactDOM.render(myelement, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
