@@ -1,21 +1,34 @@
-//import logo from './logo.svg';
-import './App.css';
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-
-
-function App() {
-  class Car extends React.Component {
-    render() {
-      return <h2>I am a {this.props.brand}!</h2>
-    }
-  }
-  
-  const myelement = <Car brand="Ford" />;
-  
-  ReactDOM.render(myelement, document.getElementById('root'));
-  
+class App extends React.Component {
+   render() {
+    const headername = {name:"Ford",model:"Mustang"};
+      return (
+         <div>
+            <Header hname={headername}/>
+            <Content/>
+            <h2>I am a {this.props.color} Car!</h2>
+         </div>
+      );
+   }
 }
-
+class Header extends React.Component {
+   render() {
+      return (
+         <div>
+            <h1>Header</h1>
+         </div>
+      );
+   }
+}
+class Content extends React.Component {
+   render() {
+      return (
+         <div>
+            <h2>Content</h2>
+            <p>The content text!!!</p>
+         </div>
+      );
+   }
+}
 export default App;
