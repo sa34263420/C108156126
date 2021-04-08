@@ -16,7 +16,8 @@ class Header extends React.Component {
    render() {
       return (
          <div>
-            <h1>Header</h1>
+            <h1>Header_name: {tjis.props.hname.name}</h1>
+            <h1>Header_model: {tjis.props.hname.model}</h1>
          </div>
       );
    }
