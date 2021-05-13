@@ -4,9 +4,8 @@ class App extends React.Component {
   constructor(props) {
      super(props);
      this.state = {data: '預設資料...'};
-     this.updateState = this.updateState.bind(this);
   };
-  updateState(e) {
+  updateState = e => {
      this.setState({data: e.target.value});
   }
   render() {
